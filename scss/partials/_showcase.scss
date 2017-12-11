@@ -1,0 +1,174 @@
+
+.showcase-bold{
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.showcase{
+    width: 100%;
+    height: 100vh;
+    background: #22A7E4;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url(../images/showcase_image.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    &:before{
+      content: '';
+      background-image: linear-gradient(#22a7e4, rgba(34, 170, 228, 0.9), rgba(34, 170, 228, 0.6), rgba(34, 170, 228, 0.4));
+      opacity: 1;
+      position: absolute;
+      background-attachment: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+    .reframe{
+      color: #f8f8f8;
+      background: rgba(34, 170, 228, 0.3);
+      position: absolute;
+      display: block;
+      padding: 0 1em;
+      margin: 43vh 0 0 0;
+      font-size: 4em;
+      font-weight: 200;
+      left: 50%;
+      width: auto;
+      transform: translateX(-50%);
+      border: 2px solid #f8f8f8;
+      text-shadow: none;
+      line-height: 1.5;
+      transform: translateX(-50%);
+      animation:0.8s ease-in 0.5s normal forwards 1 fadein;
+      -webkit-animation:0.8s ease-in 0.5s normal forwards 1 fadein;
+      opacity:0;
+    }
+    .reframe-logo{
+        position: absolute;
+        display: block;
+        padding: 0;
+        margin: 13vh 0 0 0;
+        width: 200px;
+        background-image: url(../images/reframeLogoTree.png);
+        height: 227px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px 227px;
+        z-index: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        animation:0.8s ease-in 0.5s normal forwards 1 fadein;
+        -webkit-animation:0.8s ease-in 0.5s normal forwards 1 fadein;
+        opacity:0;
+    }
+    @keyframes fadein{
+      0%{opacity:0}
+      100%{opacity:1}
+    }
+    @-webkit-keyframes fadein{
+      0%{opacity:0}
+      100%{opacity:1}
+    }
+    p{
+      padding: 0.5em;
+      width: 65%;
+      max-width: 35em;
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family:'Work Sans', sans-serif;
+      font-weight: 200;
+      font-size: 1.6em;
+      text-align: center;
+      line-height: 1.6em;
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+      margin: 60vh 0 0 0;
+      color: #f8f8f8;
+      animation:0.8s ease-in 1.5s normal forwards 1 fadein;
+      -webkit-animation:0.8s ease-in 1.5s normal forwards 1 fadein;
+      opacity: 0;
+      height: auto;
+    }
+    .start-button{
+      background: rgba(34, 170, 228, 0.7);
+      color: #f8f8f8;
+      padding: 0.5em 1em;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1.5em;
+      margin: 80vh 0 0 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      cursor: pointer;
+      border: 2px solid #f8f8f8;
+      transition: 1s ease;
+      animation:0.8s ease-in 2.5s normal forwards 1 fadein;
+      -webkit-animation:0.8s ease-in 2.5s normal forwards 1 fadein;
+      opacity:0;
+    }
+    .start-button:hover {
+      background-color:#f8f8f8;
+      color: #22A7E4; 
+    }
+}
+
+@media (max-width: 1050px){
+  .showcase{
+    .reframe-logo{
+      width: 150px;
+      height: 170px;
+      background-size: 150px 170px;
+      margin: 17vh 0 0 0;
+    }
+    .reframe{
+      font-size: 3.5em;
+      margin: 45vh 0 0 0;
+    }
+    p{
+    font-size: 1.1em;
+    height: auto;
+    }
+    .start-button{
+      font-size: 1.5em;
+    }
+  }
+}
+@media (max-width: 600px){
+  .showcase{
+    background-position: top center;
+    .reframe-logo{
+      width: 120px;
+      height: 136px;
+      background-size: 120px 136px;
+      padding: 0;
+
+    }
+    .reframe{
+      font-size: 2.5em;
+      padding: 0 1em;
+    }
+    p{
+      font-size: 1.1em;
+      height: auto;
+      width: 90%;  
+    }
+    .start-button{
+      font-size: 1.2em;
+    }
+  }
+  .showcase-bold{
+    font-size: 1.1em;
+  }
+}
+

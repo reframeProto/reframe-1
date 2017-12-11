@@ -1,0 +1,27 @@
+.sales-management{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    margin: 0 auto;
+    background: #22A7E4;
+    font-family: 'Work Sans', sans-serif;
+    color: #f8f8f8;
+}
+.sales-p1{
+    font-weight: 300;
+    font-size: 1em;
+    padding: 2em 10%;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .sales-p1{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+}
+

@@ -1,0 +1,79 @@
+.estate-bold{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.estate-agency{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    margin: 0 auto;
+    background: #22A7E4;
+    font-family: 'Work Sans', sans-serif;
+    color: #f8f8f8;
+}
+.estate-img{
+    width: 500px;
+    height: 375px;
+    background-image: url('../images/pete_nick_kingsley.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    padding: 0;
+    margin: 3em auto;
+    border: 2px solid #f8f8f8;
+}
+.estate-h1{
+    font-weight: 200;
+    padding: 1em 20%;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+.estate-p{
+    padding: 1em 10%;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    max-width: 1000px;
+    a{
+        color: #f8f8f8;
+        font-weight: 400;
+    }
+    a:hover{
+        color: #d4d4d4;
+    }
+}
+
+.carousel-item p{
+    color: #f8f8f8;
+    padding: 2em 14%;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2em;
+}
+
+@media (max-width: 800px){
+    .estate-h1{
+        font-size: 1.4em;
+        padding: 0.5em 1em;
+        line-height: 1.5em;
+    }
+    .estate-p{
+        font-size: 1.1em;
+        line-height: 1.7em;
+        padding: 1em 5%;
+    }
+    .estate-img{
+        width: 300px;
+        height: 225px;
+    }
+}
+
+

@@ -1,0 +1,135 @@
+.mentoring{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em 0;
+    margin: 0 auto;
+    background: #22A7E4;
+    font-family: 'Work Sans', sans-serif;
+    color: #f8f8f8;
+}
+.mentoring-p1{
+    font-weight: 200;
+    font-size: 1.5em;
+    padding: 1em 5%;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    margin: 2em auto;
+    text-transform: uppercase;
+}
+.mentoring-flexbox{
+    width: 95%;
+    max-width: 1500px;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: row;
+}
+.mentoring-box{
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    min-height: 35em;
+    width: 30%;
+    position: relative;
+    border: 2px solid #f8f8f8;
+
+    h1{
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: 400;
+        display: block;
+        margin: 0 auto;
+        padding: 1em;
+        width: 100%;
+        border-bottom: 2px solid #f8f8f8;
+        background: #f8f8f8;
+        color: #22A7E4;
+        height: 4em;
+    }
+    p{
+        text-align: center;
+        padding: 1em;
+        font-weight: 300;
+        font-size: 1em;
+    }
+    .business-png{
+        background-image: url(../images/business.png);
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        bottom: 0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .management-png{
+        background-image: url(../images/management.png);
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        bottom: 0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .mentoring-png{
+        background-image: url(../images/mentoring.png);
+        background-size: 150px 150px;
+        height: 150px;
+        width: 150px;
+        background-repeat: no-repeat;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        bottom: 0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
+
+
+@media (max-width: 900px){
+    .mentoring-p1{
+        font-size: 1.1em;
+    }
+    .mentoring-flexbox{
+        flex-direction: column;
+        border: none;
+        width: 90%;
+    }
+    .mentoring-box{
+        width: 100%;
+        margin: 1em auto;
+        border: none;
+        padding: 0;
+        border: 2px solid #f8f8f8;
+        height: auto;
+        min-height: 25em;
+        h1{
+            height: 3em;
+            font-size: 1.5em;
+        }
+        p{
+            text-align: center;
+            font-size: 1.1em;
+        }
+    }
+}
+@media (max-width:675px){
+    .mentoring-box{
+        min-height: 30em;
+    }
+}
+

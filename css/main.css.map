@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "main.css",
+  "sources": [
+    "main.scss",
+    "modules/_all.scss",
+    "modules/_colors.scss",
+    "partials/_base.scss",
+    "partials/_nav.scss"
+  ],
+  "mappings": "",
+  "names": []
+}
