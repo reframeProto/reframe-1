@@ -853,7 +853,7 @@ html, body {
 
 /* Slider */
 .slick-slide {
-  margin: 0; }
+  margin: 0 auto; }
 
 .slick-slider {
   position: relative;
@@ -919,7 +919,7 @@ html, body {
 
 .slick-slide img {
   display: block;
-  height: 60px;
+  height: 70px;
   margin: 0 auto; }
 
 .slick-slide.slick-loading img {

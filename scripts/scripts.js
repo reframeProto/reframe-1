@@ -52,14 +52,14 @@ $(document).ready(function(){
     dots: false,
         pauseOnHover: false,
         responsive: [{
-        breakpoint: 768,
+        breakpoint: 1150,
         settings: {
             slidesToShow: 3
         }
     }, {
-        breakpoint: 520,
+        breakpoint: 900,
         settings: {
-            slidesToShow: 3
+            slidesToShow: 2
         }
     }]
   });
