@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - $('.header-container').outerHeight()
     }, 1700);
-  })
+  });
   
   // Nav-Icon Animation
   $('#nav-icon').click(function(){
@@ -28,7 +28,7 @@ $(document).ready(function(){
     //$('.showcase').css('top',(wScroll * 0.02)+'em');
     $('.hand').css('top',(wScroll * 0.025)+'em');
     
-  };
+  }
 
   // Link switching
   function linkSwitching(){
@@ -42,7 +42,7 @@ $(document).ready(function(){
         $(this).parent().siblings().removeClass('activelink');
       }
     });
-  };
+  }
   // Customer Logo Carousel
   $('.customer-logos').slick({
     slidesToShow: 4,
@@ -79,17 +79,17 @@ $(document).ready(function(){
 
   btn1.onclick = function(){
     modal1.style.display = "block";
-  }
+  };
   btn2.onclick = function(){
     modal2.style.display = "block";
-  }
+  };
   
   close1.onclick = function(){
     modal1.style.display = "none";
-  }
+  };
   close2.onclick = function(){
     modal2.style.display = "none";
-  }
+  };
   
 
   window.onclick =  function(event){
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
     } else if (event.target == modal2){
       modal2.style.display = "none";
-    };
+    }
   };
   
     
