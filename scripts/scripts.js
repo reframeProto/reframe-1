@@ -25,8 +25,9 @@ $(document).ready(function(){
   //Parallax 
   function parallax(){
     var wScroll = $(window).scrollTop();
-
+    //$('.showcase').css('top',(wScroll * 0.02)+'em');
     $('.hand').css('top',(wScroll * 0.025)+'em');
+    
   };
 
   // Link switching

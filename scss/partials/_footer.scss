@@ -16,17 +16,17 @@
 }
 .arrow{
     position: absolute;
-    background-color: #22A7E4;
+    background-color: #f8f8f8;
     left: 50%;
     transform: translateX(-50%);
     top: -2em;
     box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.8);
-    border: 2px solid #f8f8f8;
+    border: 2px solid #22A7E4;
     border-radius: 10%;
-    transition: all ease-in-out 300ms;
+    transition: all ease-out 300ms;
     width: 10%;
     max-width: 80px;
-    background-image: url(../images/arrow.png);
+    background-image: url(../images/arrow1.png);
     height: 80px;
     background-repeat: no-repeat;
     background-position: top center;
@@ -34,11 +34,11 @@
 }
 .arrow:hover{
     cursor: pointer;
-    background-color: #f8f8f8;
-    background-image: url(../images/arrow1.png);
-    box-shadow: 0px 30px 20px -10px rgba(0,0,0,.5);
+    background-color: #22A7E4;
+    background-image: url(../images/arrow.png);
+    box-shadow: 0px 20px 20px -4px rgba(0,0,0,.5);
     transform: translate(-50%, -1em);
-    border: solid 3px #22A7E4;
+    border: solid 2px #f8f8f8;
     background-size: 85px 85px;
     max-width: 85px;
     height: 85px;

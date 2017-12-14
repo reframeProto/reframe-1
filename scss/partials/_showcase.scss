@@ -16,7 +16,7 @@
     background-image: url(../images/showcase_image.jpeg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-size: cover;
     &:before{
       content: '';
@@ -54,12 +54,12 @@
         display: block;
         padding: 0;
         margin: 13vh 0 0 0;
-        width: 200px;
+        width: 1500px;
         background-image: url(../images/reframeLogoTree.png);
-        height: 227px;
+        height: 170px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 200px 227px;
+        background-size: 150px 170px;
         z-index: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -97,8 +97,8 @@
       height: auto;
     }
     .start-button{
-      background: rgba(34, 170, 228, 0.7);
-      color: #f8f8f8;
+      background: rgba(248, 248, 248, 0.66);
+      color: #22A7E4;
       padding: 0.5em 1em;
       text-align: center;
       text-decoration: none;
@@ -109,17 +109,18 @@
       margin: 80vh 0 0 0;
       left: 50%;
       transform: translateX(-50%);
+      border: 2px solid #22A7E4;
       position: absolute;
       cursor: pointer;
-      border: 2px solid #f8f8f8;
       transition: 1s ease;
       animation:0.8s ease-in 2.5s normal forwards 1 fadein;
       -webkit-animation:0.8s ease-in 2.5s normal forwards 1 fadein;
       opacity:0;
     }
     .start-button:hover {
-      background-color:#f8f8f8;
-      color: #22A7E4; 
+      background-color:#22A7E4;
+      color: #f8f8f8;
+      border-color: #f8f8f8;
     }
 }
 

@@ -22,10 +22,17 @@
     height: auto;
     min-height: 33em;
     position: relative;
-    border: 2px solid #f8f8f8;
     width: 50%;
     overflow: hidden;
+    border: 2px solid #f8f8f8;
 }
+@keyframes animateBorder {
+    to {
+      outline-color: #f8f8f8;
+      box-shadow: 0 0 0 6px #22A7E4;
+    }
+  }
+  
 .about-us-image{
     width: 100%;
     height: auto;
@@ -79,12 +86,22 @@
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #f8f8f8;
-    transition: 1s ease;
+    &:hover{
+        color: #22A7E4;
+        background: #f8f8f8;
+        border-color: #22A7E4;
+    }
+    /*outline: 8px dashed #f8f8f8;
+    box-shadow: 0 0 0 8px #22A7E4;
+    transition: all 1s;
+    &:hover{
+        outline: 4px dashed #22A7E4;
+        box-shadow: 0 0 0 4px #f8f8f8;
+        background-color:#f8f8f8;
+        color: #22A7E4;
+    }*/
 }
-.view-more-button:hover{
-    background-color:#f8f8f8;
-    color: #22A7E4;
-}
+
 
 // MODAL 
 .modal{
@@ -113,7 +130,7 @@
     transform: translateX(-50%);
 }
 .kingsley-modal-content{
-    background: #22A7E4;
+    background: rgba(34, 170, 228, 0.9);
     color: #f8f8f8;
     margin: auto;
     padding: 1em;
@@ -140,7 +157,7 @@
     }
 }
 .nicholas-modal-content{
-    background: #22A7E4;
+    background: rgba(34, 170, 228, 0.9);
     color: #f8f8f8;
     margin: auto;
     padding: 1em;
