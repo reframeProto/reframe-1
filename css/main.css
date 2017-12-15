@@ -27,7 +27,7 @@
 
 .estate-h1 {
   font-weight: 200;
-  padding: 1em 20%;
+  padding: 1em 15%;
   text-align: center;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -58,9 +58,10 @@
 
 @media (max-width: 800px) {
   .estate-h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     padding: 1em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    margin: 1em 17%; }
   .estate-p {
     font-size: 1.1em;
     line-height: 1.7em;
@@ -342,7 +343,7 @@
 
 .sales-p1 {
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: 0;
   max-width: 1000px;
   text-align: center;
@@ -461,7 +462,18 @@
 
 .showcase-bold {
   font-weight: 400;
-  font-size: 1.3em; }
+  font-size: 1.15em; }
+
+.frame {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  background-size: 500px auto;
+  background-position: top 6em center;
+  padding: 0;
+  margin: 0; }
 
 .showcase {
   width: 100%;
@@ -483,27 +495,24 @@
     background-image: linear-gradient(#22a7e4, #22aae4, rgba(34, 170, 228, 0.6), rgba(34, 170, 228, 0.4));
     opacity: 1;
     position: absolute;
-    background-attachment: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0; }
   .showcase .reframe {
     color: #f8f8f8;
-    background: rgba(34, 170, 228, 0.3);
     position: absolute;
     display: block;
     padding: 0 1em;
-    margin: 43vh 0 0 0;
+    margin: 5.5em 0 0 0;
     font-size: 3.5em;
     font-weight: 200;
+    letter-spacing: 0.2em;
     left: 50%;
     width: auto;
-    transform: translateX(-50%);
-    border: 2px solid #f8f8f8;
+    transform: translateX(-48%);
     text-shadow: none;
     line-height: 1.5;
-    transform: translateX(-50%);
     animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
     -webkit-animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
     opacity: 0; }
@@ -511,13 +520,13 @@
     position: absolute;
     display: block;
     padding: 0;
-    margin: 13vh 0 0 0;
-    width: 150px;
+    margin: 11em 0 0 0;
+    width: 120px;
     background-image: url(../images/reframeLogoTree.png);
-    height: 170px;
+    height: 136px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 150px 170px;
+    background-size: 120px 136px;
     z-index: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -550,7 +559,7 @@
     text-align: center;
     line-height: 1.6em;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    margin: 60vh 0 0 0;
+    margin: 17em 0 0 0;
     color: #f8f8f8;
     animation: 0.8s ease-in 1.5s normal forwards 1 fadein;
     -webkit-animation: 0.8s ease-in 1.5s normal forwards 1 fadein;
@@ -565,7 +574,7 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 1.5em;
-    margin: 80vh 0 0 0;
+    margin: 90vh 0 0 0;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -579,18 +588,24 @@
     color: #f8f8f8;
     border: 2px solid #f8f8f8; }
 
-@media (max-width: 1050px) {
-  .showcase .reframe-logo {
-    width: 150px;
-    height: 170px;
-    background-size: 150px 170px;
-    margin: 17vh 0 0 0; }
-  .showcase .reframe {
-    font-size: 3.5em;
-    margin: 45vh 0 0 0; }
+@media (max-height: 550px) {
+  .showcase .start-button {
+    display: none; } }
+
+@media (max-width: 1200px) {
   .showcase p {
-    font-size: 1.1em;
-    height: auto; }
+    width: 80%;
+    font-size: 1.06em;
+    margin: 26em 0 0 0; } }
+
+@media (max-width: 1050px) {
+  .frame {
+    background-size: 443px 340px; }
+  .showcase .reframe {
+    font-size: 3em;
+    margin: 6.3em 0 0 0; }
+  .showcase p {
+    margin: 24em 0 0 0; }
   .showcase .start-button {
     font-size: 1.5em; } }
 
@@ -604,7 +619,8 @@
       padding: 0; }
     .showcase .reframe {
       font-size: 2.5em;
-      padding: 0 1em; }
+      padding: 0 1em;
+      margin: 7.5em 0 0 0; }
     .showcase p {
       font-size: 1.1em;
       height: auto;
@@ -620,7 +636,7 @@
   width: 100%;
   background: #22A7E4;
   height: 6em;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   border-bottom: 2px solid white; }
 
@@ -872,7 +888,7 @@ html, body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 400px 169px;
-    z-index: 0;
+    z-index: 1;
     margin: 1em auto; }
   .our-approach .our-approach-h1 {
     font-weight: 200;
@@ -6037,6 +6053,8 @@ button.close {
   min-height: 20em; }
 
 @media (max-width: 1050px) {
+  .carousel {
+    border: none; }
   .carousel-item {
     min-height: 22em; } }
 

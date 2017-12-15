@@ -5474,6 +5474,9 @@ button.close {
   min-height: 20em;
 }
 @media (max-width: 1050px){
+  .carousel{
+    border: none;
+  }
   .carousel-item{
       min-height: 22em;
   }
