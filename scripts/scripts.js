@@ -29,7 +29,7 @@ $(document).ready(function(){
     var wScroll = $(window).scrollTop();
     $('.showcase-outer').css('top',(wScroll * 0.04)+'em');
     //$('.frame').css('top',(wScroll * 0.02)+'em');
-    $('.hand').css('top',(wScroll * 0.025)+'em');
+    $('.hand').css('top',(wScroll * 0.033)+'em');
     
   }
   // Link switching

@@ -1,14 +1,26 @@
 .sales-management{
     width: 100%;
-    height: 33em;
+    height: 40em;
     position: relative;
     padding: 0;
     margin: 0;
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
-    border-top: 2px solid #f8f8f8;
+    //border-top: 2px solid #f8f8f8;
     border-bottom: 2px solid #f8f8f8;
     overflow: hidden;
+}
+.sales-line-break{
+    display: block;
+    background-color: #f8f8f8;
+    height: 1px;
+    width: 15em;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 9em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .sales-image{
     width: 100%;
@@ -17,27 +29,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-}
-.sales-image:hover{
-    transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3); /* IE 9 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
-     filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+    //-webkit-filter: blur(5px);
+    //-moz-filter: blur(5px);
+    //-o-filter: blur(5px);
+    //-ms-filter: blur(5px);
+    //filter: blur(5px);
+    &:before{
+        content: '';
+        background-image: linear-gradient(rgba(21, 153, 214, 1), rgba(21, 153, 214, 0.9), rgba(21, 153, 214, 0.5), rgba(21, 153, 214, 0.3), rgba(21, 153, 214, 0.1));
+        opacity: 1;
+        position: absolute;
+        //background-attachment: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 .sales-h1{
@@ -52,41 +62,47 @@
     font-family:'Work Sans', sans-serif;
     font-weight: 300;
     color: #f8f8f8;
-    
 }
 .sales-p1{
-    font-weight: 300;
-    font-size: 1.2em;
+    font-weight: 200;
+    font-size: 1.4em;
     padding:0;
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    top: 10em;
+    top: 8em;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
 }
 @media (max-width: 1050px){
     .sales-management{
-        height: 35em;
+        height: 44em;
     }
 }
 @media (max-width: 768px){
     .sales-management{
-        height: 40em;
+        height: 50em;
+    }
+    .sales-line-break{
+        top: 12em;
     }
     .sales-p1{
-        font-size: 1.1em;
+        font-size: 1.3em;
         text-align: justify;
         position: absolute;
         margin-top: 2em;
-        height: 35em;
+        height: 37em;
+        top: 10em;
     }
 }
 @media (max-width: 570px) {
     .sales-management{
-        height: 50em;
+        height: 58em;
+    }
+    .sales-p1{
+        top: 8em;
     }
 }
 

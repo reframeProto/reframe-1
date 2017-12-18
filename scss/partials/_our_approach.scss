@@ -2,39 +2,41 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 1em 0;
+    padding: 1em 0 2em 0;
     margin: 0;
-    background: #22A7E4;
+    background: #1599D6;
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
     .our-approach-header{
         position: relative;
         display: block;
         padding: 0;
-        width: 400px;
+        width: 410px;
         background-image: url(../images/our_approach.png);
-        height: 169px;
+        height: 135px;
         background-repeat: no-repeat;
         background-position: top center;
-        background-size: 400px 169px;
+        background-size: 410px 135px;
         z-index: 1;
         margin: 1em auto;
     }
     .our-approach-h1{
-        font-weight: 200;
+        font-weight: 300;
         padding: 0.5em 1em;
         margin: 1em 0 1em 10%;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-transform: uppercase;
         line-height: 1.5em;
         position: relative;
-        border: 2px solid #f8f8f8;
+        border: 2px solid #f3f3f3;
         display: inline-block;
+        background: #1599D6;
+        
     }
     .our-approach-p{
-        font-weight: 300;
-        font-size: 1em;
+        font-weight: 200;
+        font-size: 1.3em;
         padding: 2em 0 2em 10%;
         width: 50%;
         max-width: 1000px;
@@ -60,7 +62,7 @@
     margin: 0 10vw;
     padding: 0.5em 0;
     //border: 2px solid #f8f8f8;
-    background-color: #22A7E4;
+    background: #1599D6;
 }
 
 /* Slider */
@@ -167,12 +169,12 @@
             margin: 1em 10%;
             display: block;
             justify-content: center;
-            background: rgba(34, 173, 228, 0.6);
+            background: rgba(21, 153, 214, 0.6);
         }
         .our-approach-p{
             font-size: 1.1em;
             line-height: 1.7em;
-            background: rgba(34, 173, 228, 0.6);
+            background: rgba(21, 153, 214, 0.6);
             padding: 2em 10%;
             margin: 1em auto;
             width: auto;
@@ -183,7 +185,11 @@
         -moz-filter: blur(5px);
         -o-filter: blur(5px);
         -ms-filter: blur(5px);
-filter: blur(5px);
+        filter: blur(5px);
+    }
+    .customer-logos{
+        margin: 0;
+        background: rgba(21, 153, 214, 0.6);
     }
 }
 
@@ -191,8 +197,8 @@ filter: blur(5px);
     .our-approach{
         .our-approach-header{
             width: 350px;
-            height: 148px;
-            background-size: 350px 148px;
+            height: 115px;
+            background-size: 350px 115px;
         }
     } 
 }

@@ -3,11 +3,11 @@
     top: 0;
     margin: 0;
     width: 100%;
-    background: #22A7E4;
+    background: #1599D6;
     height: 6em;
     z-index: 2;
     position: fixed;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #f3f3f3;
     
     
     
@@ -40,13 +40,13 @@
     top: 5.86em;
     height: 0px;
     overflow: hidden;
-    border-bottom: 2px solid white;
-    border-left: 2px solid white;
+    border-bottom: 2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3;
     ul{
         margin: 0;
         padding: 0;
         list-style: none;
-        background: #22A7E4;
+        background: #1599D6;
         li{
             border-top: 1px solid rgba(247, 247, 247, 0.25);
             a{
@@ -59,7 +59,7 @@
                 font-family:'Alegreya Sans', sans-serif;
                 font-weight: 400; 
                 font-size: 0.9em;
-                color: #F8f8f8;
+                color: #f8f8f8;
                 width: 13em;
                 padding: 1em 0.5em;
                 margin: 0 2em;
@@ -76,10 +76,10 @@
             }
         }
         .activelink{
-            background: #f8f8f8;
+            background: #f3f3f3;
             
             a{
-                color: #22A7E4;
+                color: #1599D6;
             }
         }
     }
@@ -87,8 +87,8 @@
 .site-nav li:hover,
 .site-nav li:focus,
 .site-nav li:active{
-    background: #f8f8f8;
-    color: #22A7E4;
+    background: #f3f3f3;
+    color: #1599D6;
     border-top: none;
     -moz-transition: all ease-in-out 300ms;
     -o-transition: all ease-in-out 300ms;
@@ -97,7 +97,7 @@
     box-shadow: 0px 5px 7px -4px rgba(0, 0, 0, 0.8);
     transform: translate(0, -0.1em);
     a{
-        color: #22A7E4;
+        color: #1599D6;
     }
 }
 .site-nav--open{
@@ -195,17 +195,17 @@
 }
 #nav-icon span:nth-child(1) {
     top: 0px;
-    background-color: #009b4d;
+    background-color: #007244;
     border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon span:nth-child(2) {
     top: 18px;
-    background-color: #009b4d;
+    background-color: #007244;
     border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon span:nth-child(3) {
     top: 36px;
-    background-color: #009b4d;
+    background-color: #007244;
     border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon.open span:nth-child(1) {

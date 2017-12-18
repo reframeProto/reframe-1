@@ -4,20 +4,21 @@
     position: relative;
     padding: 2em;
     margin: 0 auto;
-    background: #22A7E4;
+    background: #1599D6;
     font-family: 'Work Sans', sans-serif;
-    color: #f8f8f8;
+    color: #f3f3f3;
     background-image: url(../images/background1.png);
     background-size: 604px 510px;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     
 }
 .leadership-container{
     width: 90vw;
     max-width: 1000px;
     height: auto;
-    //background: #22A7E4;
+    //background: #1599D6;
     position: relative;
     padding: 2em;
     margin: 2em auto;
@@ -42,19 +43,18 @@
     font-size: 1.4em;
     font-weight: 300;
     text-align: justify;
-    color: #22A7E4;
-    background: rgba(248, 248, 248, 0.8);
+    
 }
 .leadership-list{
     color: #f8f8f8;
-    padding: 1em 1em 1em 2em;
+    padding: 1em 0;
     margin:  1.5em 0;
     top: 6em;
     right: 5%;
     position: absolute;
     font-size: 1.4em;
     font-weight: 200;
-    //border: 2px solid #f8f8f8;
+    //border: 2px solid #f3f3f3;
 }
 @media (max-width: 870px){
     .leadership-container{

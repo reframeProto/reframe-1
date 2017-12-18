@@ -4,13 +4,24 @@
     position: relative;
     padding: 2em 0;
     margin: 0 auto;
-    background: #22A7E4;
+    background: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
-    color: #f8f8f8;
+    color: #1599D6;
+}
+.mentoring-h1{
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    padding: 0.5em 0 1em 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Work Sans', sans-serif;
+    font-weight: 300;
+    color: #1599D6;
 }
 .mentoring-p1{
-    font-weight: 200;
-    font-size: 1.5em;
+    font-weight: 300;
+    font-size: 1.6em;
     padding: 1em 5%;
     max-width: 1000px;
     position: relative;
@@ -35,8 +46,9 @@
     min-height: 35em;
     width: 30%;
     position: relative;
-    border: 2px solid #f8f8f8;
-
+    border: 2px solid #1599d6;
+    background: #1599D6;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     h1{
         font-size: 1.3em;
         text-align: center;
@@ -47,9 +59,8 @@
         margin: 0 auto;
         padding: 0;
         width: 100%;
-        border-bottom: 2px solid #f8f8f8;
-        background: #f8f8f8;
-        color: #22A7E4;
+        background: #f3f3f3;
+        color: #1599D6;
         height: 4em;
         
     }
@@ -58,6 +69,7 @@
         padding: 1em;
         font-weight: 300;
         font-size: 1em;
+        color: #f8f8f8;
     }
     .business-png{
         background-image: url(../images/business.png);
