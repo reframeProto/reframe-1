@@ -4,9 +4,9 @@
   font-size: 1.15em;
 }
 .frame{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background-image: url(../images/frame.png);
   background-repeat: no-repeat;
   background-size: 500px auto;
@@ -14,31 +14,40 @@
   padding: 0;
   margin: 0;
 }
+.showcase-outer{
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/showcase_image.jpeg);
+    
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+  background-size: cover;
+  &:before{
+    content: '';
+    background-image: linear-gradient(#22a7e4, rgba(34, 170, 228, 0.95), rgba(34, 170, 228, 0.6), rgba(34, 170, 228, 0.6));
+    opacity: 1;
+    position: absolute;
+    //background-attachment: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 .showcase{
     width: 100%;
     height: 100vh;
     background: #22A7E4;
     margin: 0;
     padding: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     position: relative;
-    background-image: url(../images/showcase_image.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    &:before{
-      content: '';
-      background-image: linear-gradient(#22a7e4, rgba(34, 170, 228, 1), rgba(34, 170, 228, 0.6), rgba(34, 170, 228, 0.4));
-      opacity: 1;
-      position: absolute;
-      //background-attachment: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
+    
       
     }
     .reframe{
@@ -116,11 +125,11 @@
       font-family: 'Work Sans', sans-serif;
       font-weight: 300;
       font-size: 1.5em;
-      margin: 90vh 0 0 0;
+      margin: 85vh 0 0 0;
       left: 50%;
       transform: translateX(-50%);
-      //border: 2px solid #22A7E4;
-      position: absolute;
+      border: 2px solid #22A7E4;
+      position: fixed;
       cursor: pointer;
       transition: 1s ease;
       animation:0.8s ease-in 2.5s normal forwards 1 fadein;

@@ -34,7 +34,7 @@
 }
 .estate-p{
     padding: 1em 10%;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0 auto;
     text-align: center;
     font-weight: 200;
@@ -72,6 +72,9 @@
         line-height: 1.7em;
         padding: 1em 5%;
     }
+}
+
+@media (max-width: 600px){
     .estate-img{
         width: 300px;
         height: 225px;

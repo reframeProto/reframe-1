@@ -51,7 +51,7 @@
     width: 400px;
     height: 352px;
     right: 0;
-    top: 18em;
+    top: 0;
 }
 /* CCustomer logos div */
 .customer-logos{
@@ -59,7 +59,7 @@
     max-width: 1200px;
     margin: 0 10vw;
     padding: 0.5em 0;
-    border: 2px solid #f8f8f8;
+    //border: 2px solid #f8f8f8;
     background-color: #22A7E4;
 }
 
@@ -177,6 +177,13 @@
             margin: 1em auto;
             width: auto;
         }
+    }
+    .hand{
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+filter: blur(5px);
     }
 }
 
