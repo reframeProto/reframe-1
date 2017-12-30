@@ -1,12 +1,12 @@
 
 .showcase-bold{
-  font-weight: 400;
-  font-size: 1.15em;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 .frame{
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: relative;
   background-image: url(../images/frame.png);
   background-repeat: no-repeat;
   background-size: 500px auto;
@@ -43,10 +43,7 @@
     background: #1599D6;
     margin: 0;
     padding: 0;
-    
-    position: relative;
-    
-      
+    position: relative;  
     }
     .reframe{
       color: #f8f8f8;
@@ -62,8 +59,8 @@
       transform: translateX(-48%);
       text-shadow: none;
       line-height: 1.5;
-      animation:0.8s ease-in 0.5s normal forwards 1 fadein;
-      -webkit-animation:0.8s ease-in 0.5s normal forwards 1 fadein;
+      animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
+      -webkit-animation: 0.8s ease-in 0.5s normal forwards 1 fadein;
       opacity:0;
     }
     .reframe-logo{
@@ -94,7 +91,7 @@
     }
     p{
       padding: 0.5em;
-      width: 65%;
+      width: 70%;
       max-width: 35em;
       position: absolute;
       display: block;
@@ -114,6 +111,7 @@
       height: auto;
     }
     .start-button{
+      position: absolute;
       background: #1599D6;
       color: #f8f8f8;
       padding: 0.5em 1em;
@@ -122,11 +120,11 @@
       font-family: 'Work Sans', sans-serif;
       font-weight: 300;
       font-size: 1.5em;
-      margin: 85vh 0 0 0;
+      margin: 25em 0 0 0;
       left: 50%;
       transform: translateX(-50%);
       border: 2px solid #f8f8f8;
-      position: fixed;
+      border-radius: 2em;
       cursor: pointer;
       transition: 1s ease;
       animation:0.8s ease-in 2.5s normal forwards 1 fadein;
@@ -140,42 +138,32 @@
     }
 }
 
-@media (max-height: 550px){
-  .showcase{
-    .start-button{
-      display: none;
-    }
-  }
-}
 
-@media (max-width: 1200px){
-  .showcase{
-    p{
-      width: 80%;
-      font-size: 1.06em;
-      margin: 26em 0 0 0;
-    }
-  }
-}
+
 @media (max-width: 1050px){
   .frame{
     background-size: 443px 340px;
+    background-position: top 4em center;
   }
   .showcase{
     .reframe{
       font-size: 3em;
-      margin: 6.3em 0 0 0;
+      margin: 5.7em 0 0 0;
     }
-    
+    .reframe-logo{
+      margin: 8.5em 0 0 0;
+    }
     p{
-    margin: 24em 0 0 0;
+    margin: 20em 0 0 0;
+    font-size: 1.2em;
     }
     .start-button{
-      font-size: 1.5em;
+      font-size: 1.2em;
+      margin: 26em 0 0 0;
     }
   }
 }
-@media (max-width: 600px){
+@media (max-width: 620px){
   .showcase{
     background-position: top center;
     .reframe-logo{
@@ -183,24 +171,24 @@
       height: 136px;
       background-size: 120px 136px;
       padding: 0;
-
     }
     .reframe{
       font-size: 2.5em;
-      padding: 0 1em;
-      margin: 7.5em 0 0 0;
+      padding: 0;
+      margin: 7em 0 0 0;
     }
     p{
-      font-size: 1.1em;
+      font-size: 1.05em;
       height: auto;
-      width: 90%;  
+      width: 90%;
+      margin: 24em 0 0 0;   
     }
     .start-button{
-      font-size: 1.2em;
+      font-size: 1.05em;
+      margin: 30em 0 0 0;
+    }
+    .showcase-bold{
+      font-size: 1.1em;
     }
   }
-  .showcase-bold{
-    font-size: 1.1em;
-  }
 }
-

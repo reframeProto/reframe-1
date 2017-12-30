@@ -7,7 +7,7 @@
     font-family: 'Work Sans', sans-serif;
     color: #f8f8f8;
     //border-top: 2px solid #f8f8f8;
-    border-bottom: 2px solid #f8f8f8;
+    //border-bottom: 2px solid #f8f8f8;
     overflow: hidden;
 }
 .sales-line-break{
@@ -39,7 +39,7 @@
     //filter: blur(5px);
     &:before{
         content: '';
-        background-image: linear-gradient(rgba(21, 153, 214, 1), rgba(21, 153, 214, 0.9), rgba(21, 153, 214, 0.5), rgba(21, 153, 214, 0.3), rgba(21, 153, 214, 0.1));
+        background-image: linear-gradient(rgba(21, 153, 214, 1), rgba(21, 153, 214, 1), rgba(21, 153, 214, 0.6), rgba(21, 153, 214, 0.3), rgba(21, 153, 214, 0.1), rgba(21, 153, 214, 0));
         opacity: 1;
         position: absolute;
         //background-attachment: fixed;
@@ -89,10 +89,10 @@
         top: 12em;
     }
     .sales-p1{
-        font-size: 1.3em;
-        text-align: justify;
+        font-size: 1.2em;
         position: absolute;
-        margin-top: 2em;
+        text-align: initial;
+        margin-top: 4em;
         height: 37em;
         top: 10em;
     }

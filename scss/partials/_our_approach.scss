@@ -41,7 +41,7 @@
         width: 50%;
         max-width: 1000px;
         position: relative;
-        text-align: justify;
+        text-align: center;
         margin: 0 30% 0 0;   
     }
 }
@@ -175,9 +175,11 @@
             font-size: 1.1em;
             line-height: 1.7em;
             background: rgba(21, 153, 214, 0.6);
-            padding: 2em 10%;
+            padding: 2em 5%;
             margin: 1em auto;
             width: auto;
+            font-weight: 300;
+            text-align: left;
         }
     }
     .hand{

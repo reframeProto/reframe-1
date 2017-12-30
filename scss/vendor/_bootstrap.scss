@@ -5447,9 +5447,9 @@ button.close {
   //background-size: cover;
   //background-repeat: no-repeat;
   //background-position: center;
-  max-width: 1000px;
-  margin: 3em auto;
-  border: 2px solid #f8f8f8;
+  max-width: 1200px;
+  margin: 0 auto 1em;
+  //border: 2px solid #f8f8f8;
 }
 
 .carousel-inner {
@@ -5484,14 +5484,15 @@ button.close {
   }
 }
 
-@media (max-width: 885px){
+@media (max-width: 880px){
   .carousel-item{
-    min-height: 28em;
+    min-height: 27em;
   }
 }
-@media (max-width: 650px){
+
+@media (max-width: 520px){
   .carousel-item{
-    min-height: 40em;
+    min-height: 34em;
   }
 }
 .carousel-item.active,
@@ -5561,7 +5562,16 @@ button.close {
       justify-content: center;
   width: 10%;
   text-align: center;
-  opacity: 1;
+  opacity: 0.4;
+  transition: 0.5s ease-in;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
 }
 
 .carousel-control-prev:hover,
@@ -5570,29 +5580,7 @@ button.close {
   text-decoration: none;
   outline: 0;
   opacity: 1;
-  background: #1599D6;
 }
-
-.carousel-control-prev {
-  left: 0;
-  background: linear-gradient(to right, #f8f8f8, #1599D6);
-  opacity: 0.4;
-}
-
-.carousel-control-next {
-  right: 0;
-  background: linear-gradient(to right, #1599D6, #f8f8f8);
-  opacity: 0.4;
-}
-// CAROUSEL MEDIA QUERIES
-@media (max-width: 1050px){
-  .carousel-control-prev,
-  .carousel-control-next{
-    background: #1599D6;
-    opacity: 0.6;
-  }
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
@@ -5601,6 +5589,15 @@ button.close {
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
+// CAROUSEL MEDIA QUERIES
+@media (max-width: 1050px){
+  .carousel-control-prev,
+  .carousel-control-next{
+    background: #1599D6;
+  }
+}
+
+
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");

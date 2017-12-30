@@ -4,8 +4,8 @@
     margin: 0;
     width: 100%;
     background: #1599D6;
-    height: 6em;
-    z-index: 2;
+    height: 4em;
+    z-index: 100;
     position: fixed;
     border-bottom: 2px solid #f3f3f3;
     
@@ -23,13 +23,13 @@
     position: absolute;
     display: block;
     padding: 0;
-    margin: 1em auto;
-    width: 60px;
+    margin: 0.5em auto;
+    width: 40px;
     background-image: url(../images/reframeLogoTree.png);
-    height: 68px;
+    height: 45px;
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 60px 68px;
+    background-size: 40px 45px;
 }
 .site-nav{
     margin: 0;
@@ -37,7 +37,7 @@
     position: absolute;
     line-height: 1.5em;
     right: 0%;
-    top: 5.86em;
+    top: 3.87em;
     height: 0px;
     overflow: hidden;
     border-bottom: 2px solid #f3f3f3;
@@ -49,6 +49,7 @@
         background: #1599D6;
         li{
             border-top: 1px solid rgba(247, 247, 247, 0.25);
+            padding: 0;
             a{
                 cursor: pointer;
                 display: block;
@@ -58,10 +59,10 @@
                 text-decoration: none;
                 font-family:'Alegreya Sans', sans-serif;
                 font-weight: 400; 
-                font-size: 0.9em;
-                color: #f8f8f8;
+                font-size: 0.8em;
+                color: #f3f3f3;
                 width: 13em;
-                padding: 1em 0.5em;
+                padding: 0.6em;
                 margin: 0 2em;
             }
             .disc-logo{
@@ -77,6 +78,7 @@
         }
         .activelink{
             background: #f3f3f3;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             
             a{
                 color: #1599D6;
@@ -90,12 +92,12 @@
     background: #f3f3f3;
     color: #1599D6;
     border-top: none;
-    -moz-transition: all ease-in-out 300ms;
-    -o-transition: all ease-in-out 300ms;
-    -webkit-transition: all ease-in-out 300ms;
-    transition: all ease-in-out 300ms;
-    box-shadow: 0px 5px 7px -4px rgba(0, 0, 0, 0.8);
-    transform: translate(0, -0.1em);
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transform: translate(0, -0.2em);
     a{
         color: #1599D6;
     }
@@ -106,6 +108,9 @@
 } 
 
 @media (min-width: 1050px){
+    .header-container{
+        height: 6em;
+    }
     .site-nav{
         padding:0;
         max-width: 1000px;
@@ -114,6 +119,8 @@
         position: relative;
         top: 0;
         border-left: none;
+        border-bottom: none;
+        background: none;
         ul{
             height: 6em;
             display: flex;
@@ -145,11 +152,18 @@
             }
         }
     }
-    
+    .reframe-logo-tree{
+        padding: 0;
+        margin: 0;
+        height: 70px;
+        width: 79px;
+        background-size: 70px 79px;
+    }
     .site-nav li:hover,
     .site-nav li:focus{
         box-shadow: none; 
         transform: translate(0, 0);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     #nav-icon{
@@ -160,10 +174,10 @@
 /****** Nav Burger Icon ******/
 #nav-icon{
     width: 55px;
-    height: 45px;
+    height: 30px;
     position: absolute;
     right: 3%;
-    top: 1.6em;
+    top: 0.5em;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -179,9 +193,9 @@
 #nav-icon span{
     display: block;
     position: absolute;
-    height: 9px;
+    height: 5px;
     width: 100%;
-    border-radius: 9px;
+    border-radius: 8px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -195,18 +209,18 @@
 }
 #nav-icon span:nth-child(1) {
     top: 0px;
-    background-color: #007244;
-    border: 2px solid rgba(248, 248, 248, 0.5);
+    background-color: #f3f3f3;
+    //border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon span:nth-child(2) {
     top: 18px;
-    background-color: #007244;
-    border: 2px solid rgba(248, 248, 248, 0.5);
+    background-color: #f3f3f3;
+    //border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon span:nth-child(3) {
     top: 36px;
-    background-color: #007244;
-    border: 2px solid rgba(248, 248, 248, 0.5);
+    background-color: #f3f3f3;
+    //border: 2px solid rgba(248, 248, 248, 0.5);
 }
 #nav-icon.open span:nth-child(1) {
     top: 18px;

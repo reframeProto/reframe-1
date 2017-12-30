@@ -19,25 +19,26 @@
 }
 
 .about-us-flexbox{
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     position: relative;
     padding: 0;
     margin: 3em auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     
 }
 .about-us-box{
-    margin: 0 1em;
+    margin: 0;
     padding: 0;
     height: auto;
-    min-height: 33em;
+    min-height: 27em;
     position: relative;
-    width: 50%;
+    width: 45%;
     overflow: hidden;
-    border: 2px solid #1599D6;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    //border: 2px solid #1599D6;
+    //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 @keyframes animateBorder {
@@ -47,32 +48,49 @@
     }
   }
   
-.about-us-image{
+.about-us-image-k{
     width: 100%;
     height: auto;
-    background-image: url(../images/profile_pic.jpg);
+    background-image: url(../images/formal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:  top 3em center;
-    min-height: 33em;
+    min-height: 27em;
     position: relative;
     overflow: hidden;
-    transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
-.about-us-image:hover{
-    transform: scale(1.3);
-    -moz-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    -ms-transform: scale(1.3); /* IE 9 */
+.about-us-image-k:hover,
+.about-us-image-n:hover{
+    
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2); /* IE 9 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
      filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
 } 
-
+.about-us-image-n{
+    width: 100%;
+    height: auto;
+    background-image: url(../images/formal1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  top center;
+    min-height: 27em;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
 .name{
     font-size: 2em;
     font-weight: 300;
@@ -80,7 +98,7 @@
     background: #1599D6;
     text-align: center;
     padding: 0.1em 0;
-    border-bottom: 2px solid #f3f3f3;
+    //border: 1px solid #f3f3f3;
     margin: 0;
     position: absolute;
     top: 0;
@@ -94,12 +112,14 @@
     cursor: pointer;
     color: #f3f3f3;
     background: #1599D6;
-    padding: 0.5em 1.5em;
+    padding: 0.2em 1em;
     position: absolute;
     bottom: 1em;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #f3f3f3;
+    border-radius: 1.5em;
+    transition: 0.5s ease-in;
     &:hover{
         color: #1599D6;
         background: #f3f3f3;
@@ -141,7 +161,7 @@
     margin: auto;
     padding: 1em;
     border: 2px solid #f3f3f3;
-    width: 80%;
+    width: 70%;
     height: 80%;
     overflow-y: auto;
     -webkit-animation-duration: 1.5s;
@@ -159,7 +179,7 @@
         font-weight: 100;
     }
     p{
-        text-align: justify;
+        
         padding: 2em 10%;
         font-size: 1.1em;
         font-weight: 300;
@@ -192,7 +212,7 @@
         font-weight: 100;
     }
     p{
-        text-align: justify;
+        
         padding: 3em 10%;
         font-size: 1.1em;
         font-weight: 300;
@@ -220,16 +240,44 @@
 
 
 
-@media (max-width: 900px){
-    .about-us-flexbox{
-        flex-direction: column;
-        width: 90%;
-    }
+@media (max-width: 800px){
     .about-us-box{
         width: 100%;
         margin: 0 auto 2em auto;
     }
+    .view-more-button{
+        font-size: 1.4em;
+        padding: 0.35em 1.2em; 
+    }
 }
+
+@media (max-width: 680px){
+    .about-us-flexbox{
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+    .view-more-button{
+        font-size: 1.2em;
+        bottom: 1em;
+    }
+    .name{
+        font-size: 1.5em;
+    }
+    .kingsley-modal-content,
+    .nicholas-modal-content{
+        width: 90%;
+        h1{
+            font-size: 1.25em;
+        }
+        p{
+            font-size: 1em;
+            padding: 3em 2.5%;
+        }
+    }
+    
+}
+
 
 
     

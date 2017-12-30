@@ -7,7 +7,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - $('.header-container').outerHeight()
-    }, 1700);
+    }, 1500);
   });
 
   // Nav-Icon Animation
@@ -16,23 +16,31 @@ $(document).ready(function(){
     $(this).toggleClass('open');
   });
 
+  // Section Fade Outs
+  $(document).on("scroll", function(){
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".fade-section");
 
-
-
-  $(window).scroll(function(){
-    parallax();
-    linkSwitching();
+    for (var i = 0; i < tags.length; i++){
+      var tag = tags[i];
+      if ($(tag).position().top < pageBottom - 300){
+        $(tag).addClass("visible");
+      } else {
+        $(tag).removeClass("visible");
+      }
+    }
   });
-  
+
   //Parallax 
   function parallax(){
     var wScroll = $(window).scrollTop();
     $('.showcase-outer').css('top',(wScroll * 0.04)+'em');
-    //$('.frame').css('top',(wScroll * 0.02)+'em');
+    $('.frame').css('top',(wScroll * 0.02)+'em');
     $('.hand').css('top',(wScroll * 0.033)+'em');
-    
   }
-  // Link switching
+
+  // Link Switching
   function linkSwitching(){
     var scrollBarLocation = $(this).scrollTop();
     scrollLink.each(function(){
@@ -44,47 +52,27 @@ $(document).ready(function(){
     });
   }
 
-
-
-  // Customer Logo Carousel
-  $('.customer-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 700,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 3
-        }
-    }, {
-        breakpoint: 950,
-        settings: {
-          slidesToShow: 2
-        }
-    },{
-      breakpoint: 750,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
+  // Element Fade Outs
+  function fadeOut(){
+    
+    $(".frame").css("opacity", 1 - $(window).scrollTop() / 400);
+  }
+  // Scroll Functions
+  $(window).scroll(function(){
+      parallax();
+      linkSwitching();
+      fadeOut();
   });
-  // Modal variables
+
+  // Modal Variables
   var modal1 = document.getElementById('kingsley-modal');
-
   var modal2 = document.getElementById('nicholas-modal');
-
   var btn1 = document.getElementById('kingsleyBio');
-
   var btn2 = document.getElementById('nicholasBio');
-
   var close1 = document.getElementsByClassName("close1")[0];
-
   var close2 = document.getElementsByClassName("close2")[0];
-  // Modal functions
+
+  // Modal Functions
   btn1.onclick = function(){
     modal1.style.display = "block";
   };
