@@ -9,14 +9,18 @@
   position: relative;
   padding: 2em 0;
   margin: 0;
-  background: #1599D6;
+  background-image: url(../images/estate_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: 'Work Sans', sans-serif;
+  background-attachment: fixed;
   color: #f8f8f8; }
 
 .estate-section1 {
   height: auto;
   width: 100%;
-  background: #5E2763;
+  background: rgba(94, 39, 99, 0.7);
   position: relative;
   margin: 3em 0;
   padding: 0;
@@ -52,14 +56,16 @@
   line-height: 1.5em; }
 
 .estate-p {
+  color: #f3f3f3;
   padding: 1em 10%;
   font-size: 1.4em;
   margin: 0 auto;
   text-align: center;
   font-weight: 200;
-  max-width: 1200px; }
+  max-width: 1200px;
+  z-index: 1; }
   .estate-p a {
-    color: #f8f8f8;
+    color: #f3f3f3;
     font-weight: 400; }
   .estate-p a:hover {
     color: #d4d4d4; }
@@ -275,7 +281,7 @@
   min-height: 35em;
   width: 30%;
   position: relative;
-  background: rgba(21, 153, 214, 0.7);
+  background: rgba(23, 171, 240, 0.7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   .mentoring-box h1 {
     font-size: 1.3em;
@@ -335,10 +341,10 @@
     transform: translateX(-50%); }
 
 .executives {
-  background: rgba(18, 122, 170, 0.7); }
+  background: rgba(19, 141, 197, 0.7); }
 
 .individuals {
-  background: rgba(11, 53, 100, 0.692); }
+  background: rgba(17, 124, 173, 0.7); }
 
 @media (max-width: 1050px) {
   .mentoring {
@@ -447,7 +453,8 @@
   .sales-management {
     height: 50em; }
   .sales-line-break {
-    top: 12em; }
+    top: 12em;
+    width: 8em; }
   .sales-p1 {
     font-size: 1.2em;
     position: absolute;
@@ -551,7 +558,7 @@
     letter-spacing: 0; } }
 
 .showcase-bold {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.2em; }
 
 .frame {
@@ -639,7 +646,7 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-  .showcase-outer p {
+  .showcase-outer .reframe-P {
     padding: 0.5em;
     width: 70%;
     max-width: 35em;
@@ -693,12 +700,12 @@
     margin: 5.7em 0 0 0; }
   .showcase .reframe-logo {
     margin: 8.5em 0 0 0; }
-  .showcase p {
-    margin: 20em 0 0 0;
+  .showcase .reframe-P {
+    margin: 19em 0 0 0;
     font-size: 1.2em; }
   .showcase .start-button {
     font-size: 1.2em;
-    margin: 26em 0 0 0; } }
+    margin: 27em 0 0 0; } }
 
 @media (max-width: 620px) {
   .showcase {
@@ -712,16 +719,16 @@
       font-size: 2.5em;
       padding: 0;
       margin: 7em 0 0 0; }
-    .showcase p {
-      font-size: 1.05em;
+    .showcase .reframe-P {
+      font-size: 1.1em;
       height: auto;
       width: 90%;
-      margin: 24em 0 0 0; }
+      margin: 21.5em 0 0 0; }
     .showcase .start-button {
       font-size: 1.05em;
-      margin: 30em 0 0 0; }
+      margin: 31em 0 0 0; }
     .showcase .showcase-bold {
-      font-size: 1.1em; } }
+      font-size: 1.2em; } }
 
 .header-container {
   top: 0;
@@ -748,7 +755,7 @@
   background-image: url(../images/reframeLogoTree.png);
   height: 45px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: 40px 45px; }
 
 .site-nav {
@@ -766,35 +773,43 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background: #1599D6; }
+    background: #1599D6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85vh; }
     .site-nav ul li {
       border-top: 1px solid rgba(247, 247, 247, 0.25);
-      padding: 0; }
+      padding: 0;
+      height: 11vh;
+      display: flex;
+      justify-content: center; }
       .site-nav ul li a {
         cursor: pointer;
         display: block;
         position: relative;
-        text-align: center;
         text-transform: uppercase;
         text-decoration: none;
         font-family: 'Alegreya Sans', sans-serif;
         font-weight: 400;
         font-size: 0.8em;
         color: #f3f3f3;
-        width: 13em;
-        padding: 0.6em;
-        margin: 0 2em; }
+        padding: 1em;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
       .site-nav ul li .disc-logo {
-        padding: auto;
-        margin: 0 auto;
-        width: 55px;
-        height: 65px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
         background-image: url(../images/disc_logo.png);
         background-repeat: no-repeat;
         background-size: 55px 55px;
         background-position: center; }
     .site-nav ul .activelink {
-      background: #f3f3f3;
+      background: rgba(243, 243, 243, 0.8);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
       .site-nav ul .activelink a {
         color: #1599D6; }
@@ -802,7 +817,7 @@
 .site-nav li:hover,
 .site-nav li:focus,
 .site-nav li:active {
-  background: #f3f3f3;
+  background: rgba(243, 243, 243, 0.9);
   color: #1599D6;
   border-top: none;
   -moz-transition: all ease-in-out 500ms;
@@ -827,7 +842,7 @@
     padding: 0;
     max-width: 1000px;
     margin: 0 auto;
-    height: 6em;
+    height: 5.8em;
     position: relative;
     top: 0;
     border-left: none;
@@ -835,7 +850,6 @@
     background: none; }
     .site-nav ul {
       height: 6em;
-      display: flex;
       flex-direction: row;
       margin: 0 0 0 55px;
       align-items: center;
@@ -845,7 +859,8 @@
         padding: 0 0.5em;
         margin: 0;
         width: 8em;
-        transition: 0; }
+        transition: 0;
+        height: auto; }
         .site-nav ul li a {
           padding: 100% 0;
           font-size: 0.8em;
@@ -853,17 +868,20 @@
           margin: 0;
           color: #f8f8f8;
           width: auto;
-          line-height: 1.25em; }
+          line-height: 1.25em;
+          text-align: center; }
         .site-nav ul li .disc-logo {
-          width: auto;
-          height: 55px;
-          padding: 100% 0; }
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 7.5em; }
   .reframe-logo-tree {
     padding: 0;
-    margin: 0;
+    margin: 0.8em auto;
     height: 70px;
     width: 79px;
-    background-size: 70px 79px; }
+    background-size: 70px 79px;
+    background-position: top center; }
   .site-nav li:hover,
   .site-nav li:focus {
     box-shadow: none;
@@ -986,10 +1004,22 @@ html, body {
 .fade-section.visible {
   opacity: 1; }
 
+.blur-filter {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  transition: 0.5s ease-in; }
+
 @media (max-width: 1050px) {
   .section-h1 {
     font-size: 2em;
     margin: 0 2em; } }
+
+@media (max-width: 720px) {
+  .line-break, .line-break-blue {
+    width: 8em; } }
 
 .our-approach {
   width: 100%;
@@ -1145,7 +1175,6 @@ html, body {
 
 @media (max-width: 768px) {
   .our-approach .our-approach-h1 {
-    font-size: 2em;
     padding: 0.5em 0;
     line-height: 1.5em;
     font-weight: 200;
@@ -1184,7 +1213,10 @@ html, body {
   position: relative;
   padding: 2em 0;
   margin: 0;
-  background: #f3f3f3; }
+  background-image: url(../images/about_bg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .about-us-h1 {
   position: relative;
@@ -1421,11 +1453,13 @@ html, body {
     width: 90%; }
     .kingsley-modal-content h1,
     .nicholas-modal-content h1 {
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      font-weight: 300; }
     .kingsley-modal-content p,
     .nicholas-modal-content p {
       font-size: 1em;
-      padding: 3em 2.5%; } }
+      padding: 3em 2.5%;
+      font-weight: 300; } }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -6326,11 +6360,6 @@ button.close {
   height: 30px;
   background: transparent no-repeat center center;
   background-size: 100% 100%; }
-
-@media (max-width: 1050px) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    background: #1599D6; } }
 
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }

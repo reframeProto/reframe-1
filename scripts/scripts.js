@@ -14,6 +14,8 @@ $(document).ready(function(){
   $('#nav-icon').click(function(){
     $('.site-nav').toggleClass('site-nav--open', 500);
     $(this).toggleClass('open');
+    $('.showcase, .our-approach, .about-us, .leadership, .disc, .sales-management, .mentoring, .estate-agency').toggleClass('blur-filter');
+
   });
 
   // Section Fade Outs
@@ -24,7 +26,7 @@ $(document).ready(function(){
 
     for (var i = 0; i < tags.length; i++){
       var tag = tags[i];
-      if ($(tag).position().top < pageBottom - 300){
+      if ($(tag).position().top < pageBottom - 200){
         $(tag).addClass("visible");
       } else {
         $(tag).removeClass("visible");

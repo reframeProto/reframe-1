@@ -8,14 +8,18 @@
     position: relative;
     padding: 2em 0;
     margin: 0;
-    background: #1599D6;
+    background-image: url(../images/estate_bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Work Sans', sans-serif;
+    background-attachment: fixed;
     color: #f8f8f8;
 }
 .estate-section1{
     height: auto;
     width: 100%;
-    background: #5E2763;
+    background: rgba(94, 39, 99, 0.7);
     position: relative;
     margin: 3em 0;
     padding: 0;
@@ -53,14 +57,16 @@
     line-height: 1.5em;
 }
 .estate-p{
+    color: #f3f3f3;
     padding: 1em 10%;
     font-size: 1.4em;
     margin: 0 auto;
     text-align: center;
     font-weight: 200;
     max-width: 1200px;
+    z-index: 1;
     a{
-        color: #f8f8f8;
+        color: #f3f3f3;
         font-weight: 400;
     }
     a:hover{
@@ -120,7 +126,6 @@
     .estate-img{
         width: 100vw;
         height: 320px;
-        
     }
     .estate-h1{
         font-size: 1.2em;
