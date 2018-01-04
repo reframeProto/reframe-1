@@ -31,6 +31,20 @@
     background-position: center;
     background-size: 40px 45px;
 }
+.reframe-nav{
+    position: absolute;
+    display: block;
+    left: 40px;
+    font-size: 2.2em;
+    color: #f3f3f3;
+    font-weight: 200;
+    letter-spacing: 0.15em;
+    padding: 0 0.2em;
+    margin: 0.08em 0 0 0;
+    //background: red;
+    //border: 1px solid #f3f3f3;
+    
+}
 .site-nav{
     margin: 0;
     padding: 0;
@@ -57,6 +71,7 @@
             height: 11vh;
             display: flex;
             justify-content: center;
+            transition: 1s;
             a{
                 cursor: pointer;
                 display: block;
@@ -70,8 +85,10 @@
                 padding: 1em;
                 margin: 0;
                 display: flex;
-                justify-content: center;
+                width: 100%;
+                height: 100%;
                 align-items: center;
+                justify-content: center;
             }
             .disc-logo{
                 padding: 0;
@@ -87,7 +104,7 @@
         }
         .activelink{
             background: rgba(243, 243, 243, 0.8);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             
             a{
                 color: #1599D6;
@@ -98,18 +115,51 @@
 .site-nav li:hover,
 .site-nav li:focus,
 .site-nav li:active{
-    background: rgba(243, 243, 243, 0.9);
+    background: rgba(243, 243, 243, 1);
     color: #1599D6;
-    border-top: none;
-    -moz-transition: all ease-in-out 500ms;
-    -o-transition: all ease-in-out 500ms;
-    -webkit-transition: all ease-in-out 500ms;
-    transition: all ease-in-out 500ms;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    transform: translate(0, -0.2em);
+    //border: 2px solid #1599D6;
+    -moz-transition: all ease-in-out 700ms;
+    -o-transition: all ease-in-out 700ms;
+    -webkit-transition: all ease-in-out 700ms;
+    transition: all ease-in-out 700ms;
+    //box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    //transform: translate(0, -0.2em);
     a{
         color: #1599D6;
-    }
+        
+    } 
+}
+.site-nav li::before,
+.site-nav li::after{
+    background: #1599D6;
+    color: #f3f3f3;
+}
+.site-nav a::before,
+.site-nav a::after{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: 0.7s;
+}
+.site-nav a::before{
+    border-bottom: 3px solid #1599D6;
+    border-left: 3px solid #1599D6;
+    transform-origin: 100% 0%;
+}
+.site-nav a::after{
+    border-top: 3px solid #1599D6;
+    border-right: 3px solid #1599D6;
+    transform-origin: 0% 100%;
+}
+.site-nav a:hover::after,
+.site-nav a:hover::before{
+    transform: scale(1);
 }
 .site-nav--open{
     height: auto;
@@ -120,39 +170,43 @@
     .header-container{
         height: 6em;
     }
+    .reframe-nav{
+        display: none;
+    }
     .site-nav{
         padding:0;
         max-width: 1000px;
         margin: 0 auto;
-        height: 5.8em;
+        height: 5.85em;
         position: relative;
         top: 0;
         border-left: none;
         border-bottom: none;
         background: none;
         ul{
-            height: 6em;
+            height: 5.8em;
             flex-direction: row;
             margin: 0 0 0 55px;
             align-items: center;
             background: none;
             padding: 0;
             li{
-                padding: 0 0.5em;
+                padding: 0;
                 margin: 0;
                 width: 8em;
                 transition: 0;
                 height: auto;
-                
+                border-top: none;
                 a{
-                    padding: 100% 0;
+                    padding: 0;
                     font-size: 0.8em;
-                    font-weight: 400;
+                    font-weight: 300;
                     margin: 0;
                     color: #f8f8f8;
-                    width: auto;
-                    line-height: 1.25em;
+                    height: 7.5em;
+                    //line-height: 1.25em;
                     text-align: center;
+                    transition: 0.5s;
                 }
                 .disc-logo{
                     padding: 0;
@@ -165,11 +219,11 @@
     }
     .reframe-logo-tree{
         padding: 0;
-        margin: 0.8em auto;
-        height: 70px;
-        width: 79px;
+        margin: 0.5em auto;
+        height: 79px;
+        width: 70px;
         background-size: 70px 79px;
-        background-position: top center;
+        background-position: center;
     }
     .site-nav li:hover,
     .site-nav li:focus{

@@ -1,15 +1,155 @@
 .disc{
     margin: 0;
-    padding: 2em 0;
+    padding: 2em 5%;
     width: 100%;
-    height: 600px;
-    background: #1599D6;
+    height: auto;
+    background: #f3f3f3;
     position: relative;
-    h1{
-        color: #f8f8f8;
-        font-weight: 200;
-        padding: 0;
-        margin: 0 auto 0.5em 0;
-        text-align: center;
+}
+.disc-header{
+    padding: 0;
+    margin: 0 auto 2em auto;
+    width: 350px;
+    height: 123px;
+    position: relative;
+    background-image: url(../images/certification.png);
+    background-size: 350px 123px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.disc-p1,
+.disc-p2{
+    position: relative;
+    font-size: 1.8em;
+    padding: 0 5%;
+    margin: 1em auto;
+    font-weight: 200;
+    text-align: center;
+    max-width: 1200px;
+}
+.disc-p2{
+    padding-bottom: 5em;
+}
+.disc-flexbox,
+.disc-flexbox-2{
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    padding: 2em;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+.disc-header-box,
+.disc-header-box-2{
+    padding: 0 2em 0 0;
+    width: 40%;
+    min-width: 10em;
+    font-size: 1.4em;
+    font-weight: 300;
+
+}
+.disc-header-box-2{
+    width: 18.5%;
+}
+.disc-content-box,
+.disc-content-box-2{
+    font-size: 1.4em;
+    font-weight: 200;
+}
+.tel-icon{
+    height: 64px;
+    width: 64px;
+    padding: 0;
+    margin:0;
+    bottom: 5em;
+    left: 30%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../images/tel_icon.png);
+    background-size: 64px 64px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.mail-icon{
+    height: 64px;
+    width: 64px;
+    padding: 0;
+    margin: 0;
+    bottom: 5em;
+    left: 70%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../images/mail_icon.png);
+    background-size: 64px 64px;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.kingsley-tel{
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5em;
+    left: 30%;
+    transform: translateX(-50%);
+}
+.kingsley-mail a{
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 1.5em;
+    left: 70%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #000000;
+    &:hover{
+        color: #1599d6;
+    }
+}
+@media (max-width: 720px){
+    .disc-header{
+        width: 250px;
+        height: 88px;
+        background-size: 250px 88px;
+    }
+    .disc-flexbox,
+    .disc-flexbox-2{
+        flex-direction: column;
+    }
+    .disc-header-box,
+    .disc-header-box-2{
+        font-size: 1.1em;
+        font-weight: 400;
+        width: auto;
+        padding-bottom: 1em;
+    }
+    .disc-content-box,
+    .disc-content-box-2{
+        font-size: 1em;
+    }
+    .disc-p1,
+    .disc-p2{
+        font-size: 1.2em;
+    }
+    .disc-p2{
+        padding-bottom: 7em;
+    }
+    .kingsley-tel{
+        font-size: 1.2em;
+        left: 20%;
+    }
+    .kingsley-mail a{
+        font-size: 1.2em;
+       
+    }
+    
+    .tel-icon{
+        left: 20%;
     }
 }

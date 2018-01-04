@@ -5443,13 +5443,11 @@ button.close {
 
 .carousel {
   position: relative;
-  //background-image: url(../images/business_card.png);
-  //background-size: cover;
-  //background-repeat: no-repeat;
-  //background-position: center;
   max-width: 1200px;
-  margin: 0 auto 1em;
-  //border: 2px solid #f8f8f8;
+  margin: 3em auto;
+  background: rgba(21, 153, 214, 0.6);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 
 .carousel-inner {

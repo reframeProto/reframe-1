@@ -103,7 +103,7 @@
       font-size: 1.6em;
       text-align: center;
       line-height: 1.6em;
-      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
       margin: 17em 0 0 0;
       color: #f8f8f8;
       animation:0.8s ease-in 1.5s normal forwards 1 fadein;
@@ -113,7 +113,7 @@
     }
     .start-button{
       position: absolute;
-      background: #1599D6;
+      background: rgba(21, 153, 214, 0.5);
       color: #f8f8f8;
       padding: 0.5em 1em;
       text-align: center;
